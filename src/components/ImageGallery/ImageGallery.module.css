@@ -1,0 +1,13 @@
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-top: 96px;
+}
+.listItem {
+  margin: 10px;
+  box-sizing: border-box;
+}

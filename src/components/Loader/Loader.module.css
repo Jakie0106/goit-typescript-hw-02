@@ -1,0 +1,9 @@
+.loaderContainer {
+  position: fixed;
+  /* bottom: 10px; */
+  top: 13px;
+  right: 62%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

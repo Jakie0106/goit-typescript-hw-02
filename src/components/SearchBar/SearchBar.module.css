@@ -1,0 +1,15 @@
+.container {
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+}
+
+.input {
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(78, 78, 78);
+}

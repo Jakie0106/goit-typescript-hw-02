@@ -1,0 +1,17 @@
+.modalImg {
+  width: 1080px;
+  height: 720px;
+  object-fit: cover;
+  border-radius: 40px;
+  display: block;
+}
+
+.Modal {
+  border: none;
+  border-radius: 40px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+}
