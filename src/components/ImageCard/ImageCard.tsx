@@ -1,6 +1,7 @@
 import s from "./ImageCard.module.css";
+import { ImageCardProps } from "../../types";
 
-const ImageCard = ({ image, onClick }) => {
+const ImageCard: React.FC<ImageCardProps> = ({ image, onClick }) => {
   return (
     <div className={s.listItem}>
       <img

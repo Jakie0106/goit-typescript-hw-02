@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Modal from "react-modal";
 Modal.setAppElement("#root");
 import s from "./ImageModal.module.css";
+import { ImageModalProps } from "../../types";
 
 const customStyles = {
   content: {
@@ -17,7 +18,7 @@ const customStyles = {
   },
 };
 
-const ImageModal = ({ isOpen, image, isClose }) => {
+const ImageModal: React.FC<ImageModalProps> = ({ isOpen, image, isClose }) => {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -29,6 +30,10 @@ const ImageModal = ({ isOpen, image, isClose }) => {
       document.body.style.overflow = "auto";
     };
   }, [isOpen]);
+
+  if (!image) {
+    return null;
+  }
 
   return (
     <div>

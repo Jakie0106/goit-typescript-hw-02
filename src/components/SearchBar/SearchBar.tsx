@@ -1,13 +1,14 @@
 import { Field, Form, Formik } from "formik";
 import s from "./SearchBar.module.css";
 import toast, { Toaster } from "react-hot-toast";
+import { FormValues, SearchBarProps } from "../../types";
 
-const SearchBar = ({ search }) => {
-  const initialValues = {
+const SearchBar: React.FC<SearchBarProps> = ({ search }) => {
+  const initialValues: FormValues = {
     query: "",
   };
 
-  const handleSubmit = (values) => {
+  const handleSubmit = (values: FormValues): void => {
     if (values.query !== "") {
       search(values.query);
     } else {
